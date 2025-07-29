@@ -1,0 +1,436 @@
+    :root {
+      --primary-blue: #3498db;
+      --light-blue: #ebf5fb;
+      --dark-gray: #34495e;
+      --medium-gray: #7f8c8d;
+      --light-gray: #ecf0f1;
+      --bg-color: #ffffff;
+      --text-color: #070809;
+      --card-bg: #ffffff;
+      --border-color: rgba(0,0,0,0.125);
+      --input-bg: #ffffff;
+      --input-text: #070809;
+      --input-border: #ced4da;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="dark"] {
+      --primary-blue: #3498db;
+      --light-blue: #1a2634;
+      --dark-gray: #ecf0f1;
+      --medium-gray: #bdc3c7;
+      --light-gray: #2c3e50;
+      --bg-color: #1a1a1a;
+      --text-color: #ffffff;
+      --card-bg: #242424;
+      --border-color: rgba(255,255,255,0.125);
+      --input-bg: #333333;
+      --input-text: #ffffff;
+      --input-border: #404040;
+      --shadow-color: rgba(0, 0, 0, 0.3);
+    }root {
+      --primary-blue: #161718;
+      --light-blue: #ebf5fb;
+      --dark-gray: #34495e;
+      --medium-gray: #7f8c8d;
+      --light-gray: #ecf0f1;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-color: var(--border-color);
+    }
+
+    .navbar {
+      background-color: var(--card-bg) !important;
+    }
+
+    .hero {
+      background-color: var(--light-blue);
+    }
+    
+    
+    .navbar {
+      box-shadow: 0 2px 10px var(--shadow-color);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+    
+    .navbar-brand i {
+      margin-right: 6px;
+    }
+
+    #themeToggle {
+      color: var(--text-color);
+      border-color: var(--border-color);
+      background-color: transparent;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    #themeToggle:hover {
+      color: var(--primary-blue);
+      border-color: var(--primary-blue);
+    }
+
+    #themeToggle i {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    #themeToggle:hover i {
+      transform: rotate(15deg);
+    }
+    
+    .hero {
+      background-color: var(--light-blue);
+      padding: 3.5rem 0;
+    }
+    
+    .hero h1 {
+      font-weight: 800;
+      color: var(--dark-gray);
+      font-size: 2.5rem;
+    }
+    
+    .hero p {
+      color: var(--medium-gray);
+      font-size: 1.2rem;
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-blue);
+      border-color: var(--primary-blue);
+      padding: 0.5rem 1.5rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    
+    .form-control {
+      background-color: var(--input-bg);
+      border-color: var(--input-border);
+      color: var(--input-text);
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    .form-control::placeholder {
+      color: var(--medium-gray);
+      opacity: 0.7;
+      transition: color 0.3s ease;
+    }
+
+    .form-control::-webkit-input-placeholder {
+      color: var(--medium-gray);
+      opacity: 0.7;
+      transition: color 0.3s ease;
+    }
+
+    .form-control::-moz-placeholder {
+      color: var(--medium-gray);
+      opacity: 0.7;
+      transition: color 0.3s ease;
+    }
+
+    .form-label {
+      color: var(--text-color);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    .form-control:focus {
+      background-color: var(--input-bg);
+      border-color: var(--primary-blue);
+      color: var(--input-text);
+      box-shadow: 0 0 0 0.25rem rgba(233, 239, 243, 0.25);
+    }
+    
+    .input-group-text {
+      background-color: var(--input-bg);
+      border-color: var(--input-border);
+      color: var(--input-text);
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: #2980b9;
+      border-color: #2980b9;
+    }
+    
+    .expense-form {
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-top: -50px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+    
+    .section-title i {
+      margin-right: 10px;
+      color: var(--primary-blue);
+    }
+    
+    .expense-card {
+      border-left: 4px solid var(--primary-blue);
+      box-shadow: 0 2px 8px var(--shadow-color);
+      margin-bottom: 1rem;
+      transition: transform 0.2s, background-color 0.3s ease, box-shadow 0.3s ease;
+      background-color: var(--card-bg);
+    }
+    
+    .expense-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--shadow-color);
+    }
+    
+    .category-icon {
+      width: 40px;
+      height: 40px;
+      background-color: var(--light-blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+      transition: background-color 0.3s ease;
+    }
+    
+    .category-icon i {
+      font-size: 1.2rem;
+      color: var(--primary-blue);
+      transition: color 0.3s ease;
+    }
+    
+    .expense-amount {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-color);
+      transition: color 0.3s ease;
+    }
+    
+    .expense-category {
+      font-size: 0.9rem;
+      color: var(--medium-gray);
+      transition: color 0.3s ease;
+    }
+    
+    .expense-date {
+      font-size: 0.85rem;
+      color: var(--medium-gray);
+      transition: color 0.3s ease;
+    }
+    
+    .delete-expense {
+      cursor: pointer;
+      color: #e74c3c;
+      font-size: 1.1rem;
+      opacity: 0.8;
+      transition: color 0.3s ease, opacity 0.3s ease;
+    }
+
+    .delete-expense:hover {
+      opacity: 1;
+      color: #c0392b;
+    }
+    
+    .weekly-chart {
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    
+    .chart-bar {
+      flex-grow: 1;
+      background-color: var(--light-blue);
+      border-radius: 6px 6px 0 0;
+      transition: height 0.5s;
+      position: relative;
+      min-height: 20px;
+    }
+    
+    .bar-label {
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--medium-gray);
+    }
+    
+    .bar-amount {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--primary-blue);
+      font-weight: 600;
+    }
+    
+    .chart-container {
+      padding: 30px 0;
+    }
+    
+    .no-expenses-placeholder {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-color);
+    }
+
+    .no-expenses-placeholder i {
+      color: var(--medium-gray);
+    }
+
+    .no-expenses-placeholder .small {
+      color: var(--medium-gray);
+      opacity: 0.8;
+    }
+    
+    .footer {
+      background-color: var(--card-bg);
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-color);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    
+    .social-link {
+      color: var(--medium-gray);
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.2s;
+    }
+    
+    .social-link:hover {
+      color: var(--primary-blue);
+    }
+
+    /* Login Modal Styles */
+    .modal-content {
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+    }
+
+    .modal-header {
+      background-color: var(--card-bg);
+      color: var(--text-color);
+    }
+
+    .btn-close {
+      color: var(--text-color);
+    }
+
+    .nav-tabs .nav-link {
+      color: var(--text-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-tabs .nav-link.active {
+      color: var(--primary-blue);
+      border-bottom: 2px solid var(--primary-blue);
+      background-color: transparent;
+    }
+
+    .nav-tabs {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    #loginModal .form-control {
+      background-color: var(--input-bg);
+      border-color: var(--input-border);
+      color: var(--input-text);
+    }
+
+    #loginModal .form-text {
+      color: var(--medium-gray);
+    }
+
+    #loginModal .btn-primary {
+      margin-top: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .expense-form {
+        margin-top: 1.5rem;
+      }
+      
+      .hero {
+        text-align: center;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+    
+    /* Button hover effects */
+    .btn-primary, .btn-outline-primary {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .btn-primary:hover, .btn-outline-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Expense card entry animation */
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .expense-card.new-entry {
+      animation: fadeSlideUp 0.5s ease forwards;
+    }
+    
+    /* Chart bar animation */
+    @keyframes growHeight {
+      from {
+        height: 0;
+      }
+      to {
+        height: var(--target-height);
+      }
+    }
+    
+    .chart-bar.animate {
+      animation: growHeight 1s ease forwards;
+    }
